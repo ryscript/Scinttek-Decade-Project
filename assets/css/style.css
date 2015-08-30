@@ -1,0 +1,306 @@
+/*----------------- 
+Header
+----------------- */
+header#header form#searchform {
+  padding: 8px 10px;
+  background-color: #f1f1f1;
+}
+
+h1.logo {
+  margin-bottom: 26px;
+  padding-top: 0;
+}
+h1.logo img {
+  display: inline-block;
+}
+
+h2.slogan {
+  font-size: 16px;
+}
+
+/* Navigation
+----------------- */
+.main-menu ul.nav > li > a {
+  border-top: 4px solid transparent;
+  color: #000;
+}
+.main-menu ul.nav > li > a:focus, .main-menu ul.nav > li > a:hover {
+  background: transparent;
+  color: #0fbc85;
+  border-color: #7BC6B1;
+}
+.main-menu ul.nav li {
+  padding: 8px 10px;
+}
+.main-menu ul.nav li a {
+  padding: 4px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+.main-menu ul.nav li.current_page_ancestor > a, .main-menu ul.nav li.current-menu-item > a {
+  background: transparent;
+  color: #0fbc85;
+  border-color: #7BC6B1;
+}
+.main-menu ul.nav li:hover ul {
+  left: 0;
+  top: 48px;
+  z-index: 99;
+}
+.main-menu ul.nav li:hover li ul {
+  top: -999em;
+}
+.main-menu ul.nav li li:hover ul {
+  left: 10em;
+  top: 0;
+}
+.main-menu ul.nav li li:hover li ul {
+  top: -999em;
+}
+.main-menu ul.nav li li li:hover ul {
+  left: 10em;
+  top: 0;
+}
+.main-menu ul.nav ul {
+  position: absolute;
+  top: -999em;
+  background-color: #F5F5F5;
+  width: 14em;
+  text-align: left;
+  border-bottom: 2px solid #7BC6B1;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  list-style: none;
+}
+.main-menu ul.nav ul li:hover, .main-menu ul.nav ul li.sfHover, .main-menu ul.nav ul li.current-menu-item a, .main-menu ul.nav ul li.current-menu-ancestor a, .main-menu ul.nav ul a:focus, .main-menu ul.nav ul a:hover, .main-menu ul.nav ul a:active {
+  background-color: #ABDACD;
+  outline: 0;
+  color: #fff;
+}
+.main-menu ul.nav ul li {
+  padding: 0;
+}
+.main-menu ul.nav ul li a {
+  padding: 8px 10px;
+  display: block;
+}
+.main-menu ul.nav ul li:first-child > a {
+  border-top: none;
+}
+.main-menu ul.nav ul li:last-child > a {
+  border-bottom: none;
+}
+
+/* Content
+----------------- */
+main#main {
+  margin-top: 60px;
+}
+main#main article {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.page-title,
+.entry-title {
+  margin-top: 0;
+  font-size: 28px;
+  color: #0fbc85;
+  font-weight: 400;
+}
+.page-title a,
+.entry-title a {
+  font-size: 18px;
+  color: #0fbc85;
+  font-weight: 600;
+}
+
+.entry-utility {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* Read More */
+.more-link {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #0fbc85;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.more-link:hover {
+  background-color: #555555;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* author description */
+.author-wrapper {
+  margin-top: 30px;
+  padding: 20px 10px 18px 10px;
+  background-color: #EEE;
+}
+.author-wrapper h3.author-title {
+  margin-top: 0;
+}
+.author-wrapper .author-info {
+  color: #8F8F8F;
+}
+
+
+/*----------------- */
+/* Sidebar
+----------------- */
+aside .widget-container {
+  margin-bottom: 40px;
+}
+aside .widget-container .widget-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+}
+aside .widget-container ul {
+  list-style: none;
+}
+aside .widget-container ul li {
+  padding: 0.4em 0;
+  list-style: none;
+}
+aside .widget-container ul li a {
+  display: block;
+}
+aside ul.children li:last-child,
+aside ul.children li:last-child {
+  border-bottom: 0;
+}
+aside .icons {
+  margin-top: 20px;
+  font-size: 14px;
+}
+aside .icons .icon {
+  margin-top: 4px;
+  margin-right: 12px;
+  background: url("../images/sprite.png") no-repeat -18px -92px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+aside .icons .icon.url {
+  background-position: -18px -112px;
+}
+aside .icons .icon.fax {
+  background-position: -18px -132px;
+}
+aside .icons .icon.email {
+  background-position: -18px -152px;
+}
+
+/* Comments
+----------------- */
+.comment-wrapper {
+  margin-top: 40px;
+}
+.comment-wrapper #respond {
+  margin-top: 30px;
+}
+.comment-wrapper .comment_heading {
+  font-size: 12px;
+}
+.comment-wrapper #reply-title,
+.comment-wrapper .comment-title {
+  font-size: 18px;
+}
+.comment-wrapper #reply-title {
+  margin-bottom: 15px;
+}
+.comment-wrapper .comment-form input[type="text"],
+.comment-wrapper .comment-form input[type="text"],
+.comment-wrapper .comment-form textarea {
+  padding: 14px;
+  background-color: #F3F3F3;
+  border: none;
+}
+.comment-wrapper .comment-form-author,
+.comment-wrapper .comment-form-email {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.comment-wrapper .comment-form-email {
+  margin-right: 0;
+}
+.comment-wrapper .comment-form-comment {
+  clear: both;
+}
+.comment-wrapper .comment-form-comment textarea {
+  height: 160px;
+  width: 100%;
+}
+.comment-wrapper span {
+  line-height: 24px;
+  margin-right: 2px;
+}
+
+ol.comment-list {
+  list-style: none;
+}
+ol.comment-list ul {
+  margin: 0px 0px 0px 30px;
+  list-style: none;
+}
+ol.comment-list .comment-body {
+  border-bottom: 1px solid #E4E4E4;
+  margin-top: 22px;
+  padding-bottom: 22px;
+}
+ol.comment-list .comment-body .comment-avartar {
+  float: left;
+  height: 66px;
+}
+ol.comment-list .comment-body .comment-context {
+  margin-left: 100px;
+}
+ol.comment-list .comment-body .comment-context .comment-content {
+  margin-top: 7px;
+}
+ol.comment-list .comment-body .comment-context .comment-content .comment-author {
+  margin-right: 5px;
+  font-size: 14px;
+}
+ol.comment-list .comment-body .comment-context .comment-content .comment-date {
+  margin-right: 5px;
+  font-style: italic;
+  font-size: 12px;
+}
+ol.comment-list .comment-body .comment-context .comment-content .comment-time {
+  margin-right: 5px;
+  font-style: italic;
+}
+
+/* Footer
+----------------- */
+footer#footer {
+  margin-top: 40px;
+  padding: 16px 0;
+  background-color: #0b9444;
+  color: #fff;
+}
+footer#footer a {
+  color: #eee;
+  font-size: 14px;
+}
+footer#footer .copyright,
+footer#footer .widget_text {
+  font-size: 12px;
+  font-weight: 300;
+  color: #b8b8b8;
+}

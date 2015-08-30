@@ -1,0 +1,23 @@
+/**
+ * @desc	RS Recent Comments
+ * @author	Ryan Sutana
+ */
+
+.recent-comments{}
+	.recent-comments ul.comments{}
+		.recent-comments ul.comments li.comment-item{
+			margin-bottom: 20px;
+		}
+
+			.recent-comments ul.comments li.comment-item .comment-body{
+				font-size: 14px;
+			}
+				
+				.recent-comments ul.comments li.comment-item .comment-body .author-url{
+					margin-top: 10px;
+				}
+					.recent-comments ul.comments li.comment-item .comment-body .author-url a{
+						font-weight: 400;
+						font-size: 12px;
+						color: #0fbc85;
+					}

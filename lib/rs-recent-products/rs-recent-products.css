@@ -1,0 +1,17 @@
+/**
+ * @desc	RS Recent Projects
+ * @author	Ryan Sutana
+ */
+
+.recent-products{}
+	.recent-products ul.products{}
+		.recent-products ul.products li.product-item{
+			border-bottom: 0 !important;
+		}
+		.recent-products ul.products li.product-item .product-title{
+			font-weight: 600;
+		}
+		
+		.recent-products ul.products li.product-item p{
+			font-size: 12px;
+		}

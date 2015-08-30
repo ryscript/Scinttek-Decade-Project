@@ -1,0 +1,266 @@
+.sf-menu,
+.sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+
+.sf-menu {
+	a {
+		padding: 0.44em 0.6em;
+		display: block;
+		position: relative;
+		
+		/* arrows */
+		&.sf-with-ul {
+			padding-right: 2.25em;
+			min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
+		}
+	}
+	
+	ul {
+		position: absolute;
+		top: -999em;
+		
+		background-color: #F5F5F5;
+		width: 14em;
+		text-align: left;
+		
+		border-bottom: 2px solid #26a6ff; 
+		padding-top: 8px;
+		padding-bottom: 8px;
+		
+		& li:hover, 
+		& li.sfHover, 
+		& li.current-menu-item a, 
+		& li.current-menu-ancestor a,
+		& a:focus, 
+		& a:hover, 
+		& a:active {
+			background-color: #6BC2FF;
+			outline: 0;
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		li:first-child > a{
+			border-top: none;
+		}
+		
+		li:last-child > a{
+			border-bottom: none;
+		}
+		
+	}
+	
+	//change sub-menu font-family and font-size
+	ul a{
+		font-size: 13px;
+	}
+	
+	ul a,
+	ul ul a{
+		//educe line-height in sub-menu
+		line-height: 20px;
+	}
+	
+	li {
+		display: inline-block;
+		position: relative;
+		
+		&:hover {
+			visibility: inherit; //fixes IE7 'sticky bug''
+		}
+		
+		a{
+			color: #909090;
+		}
+		
+		&:hover ul,
+		&.sfHover ul {
+			left: 0;
+			top: 2.78em; //match top ul list item height
+			z-index: 99;
+		}
+		
+		&:hover li ul,
+		&.sfHover li ul {
+			top: -999em;
+		}
+		
+		li:hover ul,
+		li.sfHover ul {
+			left: 10em; //match ul width
+			top: 0;
+		}
+		
+		li:hover li ul,
+		li.sfHover li ul {
+			top: -999em;
+		}
+		
+		li li:hover ul,
+		li li.sfHover ul {
+			left: 10em; //match ul width
+			top: 0;
+		}
+	}
+	
+	ul li {
+		width: 100%;
+	}
+	
+	
+	/* DEMO SKIN */
+	> li {
+		a:visited{
+			color: #555;
+		}
+	
+		> a{
+			padding: 10px;
+			font-size: 14px;
+			
+			@extend a:visited
+		}
+	}
+	
+	> li > a,
+	a {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	li li {
+		li {}
+	}
+	
+	> li.sfHover:hover,
+	> li.sfHover > a,
+	> li.sfHover > a:hover,
+	> li > a:hover,
+	> li.current-menu-item > a,
+	> li.current-menu-ancestor > a{
+		color: $primary-color !important;
+	}
+	
+
+}
+
+
+
+/* Horizontal nav-bar menu */
+.sf-navbar {
+	background:		$navbar-background;
+	height:			2.5em;
+	padding-bottom:	2.5em;
+	position:		relative;
+
+	ul {
+		
+		&.sf-shadow-off {
+			background: transparent;
+		}
+		
+		li {
+			width: auto;
+			float: left;
+			
+			& li a:focus,
+			& li a:hover,
+			& li a:active {
+				background: #E6EEFF;
+			}
+			
+			&:hover,
+			&.sfHover,
+			&:hover li,
+			&.sfHover li{
+				background: #D1DFFF;
+			}
+		}
+
+		a:focus,
+		a:hover,
+		a:active {
+			background: #D1DFFF;
+		}
+		
+		
+	}
+	
+	& li {
+		background: #AABDE6;
+		position: static;
+		
+		ul {
+			width: 44em; // IE6 soils itself without this			
+		}
+		
+		&.current {
+			background: $navbar-background;
+		}
+		
+		&:hover,
+		&.sfHover,
+		li.current{
+			background: $navbar-background;
+		}
+		
+		li {
+			background: $navbar-background;
+			position: relative;
+			
+			ul {
+				width: 13em;
+			}
+			
+			li {
+				width: 100%;
+			}
+			
+			&.current > a {
+				font-weight:	bold;
+			}
+		}
+		
+		
+		li li:hover,
+		li.sfHover,
+		li.current li.current{
+			background: #E6EEFF;
+		}
+	}
+
+	a {
+		border-top: none;
+		border: none;
+		
+		&:focus,
+		&:hover,
+		&:active {
+			background: $navbar-background;
+		}
+		
+		&:visited {
+			border: none;
+		}
+	}
+	
+	.current ul,
+	ul li:hover ul,
+	ul li.sfHover ul {
+		left: 0;
+		top: 2.5em; /* match top ul list item height */
+	}
+	.current ul ul {
+		top: -999em;
+	}
+	
+	> li > ul {
+		background: transparent;
+		padding: 0;
+	}
+	
+}

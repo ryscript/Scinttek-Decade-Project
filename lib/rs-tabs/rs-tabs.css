@@ -1,0 +1,59 @@
+/**
+ * @desc	RS Tabs styles
+ * @author	Ryan Sutana
+ */
+
+.rs-tabs-wrapper{ margin-top: 20px; }
+	.rs-tabs-wrapper .tabs {}
+		.rs-tabs-wrapper .tabs li{ 
+			float: left;
+			width: 50%;
+			text-align: center;
+		}
+			.rs-tabs-wrapper .tabs li a{ 
+				padding: 12px 0;
+				background-color: #ececec;
+				color: #666;
+				text-transform: uppercase;
+			}
+
+				.rs-tabs-wrapper .tabs li a.active,
+				.rs-tabs-wrapper .tabs li a:hover {
+					background-color: #0fbc85;
+					color: #fff;
+					text-decoration: none;
+				}
+		
+		
+		.rs-tabs-wrapper .scroll-content{
+			height: 576px;
+		}
+		
+		
+		.rs-tabs-wrapper .tab-popular{}
+			.rs-tabs-wrapper .tab-popular .popular-title{}
+			
+				.rs-tabs-wrapper ul.tab-recent li,
+				.rs-tabs-wrapper ul.tab-popular li{
+					padding: 20px 0;
+					border-bottom: 1px solid #dcdcdc;
+				}
+				
+				.rs-tabs-wrapper ul.tab-recent .recent-title a,
+				.rs-tabs-wrapper ul.tab-popular .popular-title a{
+					font-weight: 600;
+					font-size: 16px;
+					color: #333;
+				}
+			.rs-tabs-wrapper ul.tab-recent .views,
+			.rs-tabs-wrapper ul.tab-popular .views{
+				color: #0fbc85;
+			}
+				.rs-tabs-wrapper ul.tab-recent .date .date-posted,
+				.rs-tabs-wrapper ul.tab-popular .views .post-views{
+					font-size: 12px;
+				}
+				
+		
+		.rs-tabs-wrapper .tab-recent{}
+			.rs-tabs-wrapper .tab-recent .recent-title{}

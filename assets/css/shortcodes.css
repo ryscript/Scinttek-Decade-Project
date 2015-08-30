@@ -1,0 +1,139 @@
+/* Tabs ---------------------- */
+div.rs-tab ul.rs-tab-title, div.rs-tab ul.rs-tab-content { margin: 0px; list-style: none; }
+div.rs-tab ul.rs-tab-title li { float: left; margin-right: 3px; }
+div.rs-tab ul.rs-tab-title li a { padding: 6px 20px 6px; cursor: pointer; display: block; font-weight: bold; }
+div.rs-tab ul.rs-tab-content { padding: 20px; }
+div.rs-tab ul.rs-tab-content li { display: none; }
+div.rs-tab ul.rs-tab-content li.active { display: block; }
+
+/* custom */
+div.rs-tab ul.rs-tab-title a { color: #a2a2a2; }
+div.rs-tab ul.rs-tab-title a { background-color: #eeeeee; }
+div.rs-tab ul.rs-tab-title a.active { color: #656565; }
+div.rs-tab ul.rs-tab-content, div.rs-tab ul.rs-tab-title a.active { background-color: #ffffff; }
+div.rs-tab ul.rs-tab-content { color: #969696; }
+
+/* Divider ---------------------- */
+div.rs-divider{ border-bottom-width: 1px; border-bottom-style: solid; text-align: right; font-size: 11px;}
+
+
+/* Labels ---------------------- */
+.label { padding: 1px 4px 2px; font-size: 12px; font-weight: bold; text-align: center; text-decoration: none; line-height: 1; white-space: nowrap; display: inline; position: relative; bottom: 1px; color: #fff; background: #2ba6cb; }
+.label.radius { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.label.round { padding: 1px 7px 2px; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; }
+.label.alert { background-color: #c60f13; }
+.label.success { background-color: #5da423; }
+.label.secondary { background-color: #e9e9e9; color: #505050; }
+
+
+/* Accordion ---------------------- */
+ul.rs-accordion,
+ul.rs-toggle-box{ margin-left: 0px; }
+ul.rs-accordion,
+ul.rs-toggle-box li{ position: relative; margin-bottom: 15px; overflow: hidden; } 
+ul.rs-accordion li:last-child,
+ul.rs-toggle-box li:last-child{ margin-bottom: 0px; } 
+ul.rs-accordion li .accordion-title,
+ul.rs-toggle-box li .toggle-box-title { margin: 0px; padding: 12px 20px 12px 40px; cursor: pointer; background-position: 16px center; background-repeat: no-repeat; }
+ul.rs-accordion li .accordion-content,
+ul.rs-toggle-box li .toggle-box-content{ margin: 0px 20px 20px 40px; }
+ul.rs-accordion li.active .accordion-title,
+ul.rs-toggle-box li.active .toggle-box-title{ font-weight: bold; }
+ul.rs-accordion li,
+ul.rs-toggle-box  li { position: relative; margin-bottom: 15px; overflow: hidden; }
+
+/* custom */
+ul.rs-accordion li,
+ul.rs-toggle-box li { background-color: #ffffff; }
+ul.rs-accordion li,
+ul.rs-toggle-box li {
+	-moz-box-shadow: 1px 1px 2px #ececec;
+	-webkit-box-shadow: 1px 1px 2px #ececec;
+	box-shadow: 1px 1px 2px #ececec;
+}
+ul.rs-accordion li.active .accordion-title,
+ul.rs-toggle-box li.active .toggle-box-title {
+	background-image: url('../images/icons/accordion-title-active.png');
+}
+ul.rs-accordion li .accordion-title,
+ul.rs-toggle-box li .toggle-box-title {
+	background-image: url('../images/icons/accordion-title.png');
+}
+ul.rs-accordion li .accordion-title,
+ul.rs-toggle-box li .toggle-box-title { font-size: 15px; }
+ul.rs-accordion li .accordion-content,
+ul.rs-toggle-box li .toggle-box-content { color: rgb(129, 129, 129); }
+
+
+/* Columns ---------------------- */
+.shortcode1-1{ width: 100%; }
+
+.shortcode1-2{ margin-right: 2%; float: left; margin-bottom: 20px; width: 48%;    }
+.shortcode1-3{ margin-right: 2%; float: left; margin-bottom: 20px; width: 31.33%; }
+.shortcode1-4{ margin-right: 2%; float: left; margin-bottom: 20px; width: 23%;    }
+.shortcode1-5{ margin-right: 2%; float: left; margin-bottom: 20px; width: 18%; }
+
+.shortcode2-3{ margin-right: 2%; float: left; margin-bottom: 20px; width: 64.66%; }
+.shortcode2-5{ margin-right: 2%; float: left; margin-bottom: 20px; width: 38%; }
+
+.shortcode3-4{ margin-right: 2%; float: left; margin-bottom: 20px; width: 73%;    }
+.shortcode3-5{ margin-right: 2%; float: left; margin-bottom: 20px; width: 58%; }
+
+.shortcode4-5{ margin-right: 2%; float: left; margin-bottom: 20px; width: 78%; }
+
+.shortcode1-4.last{ margin-right: 0; width: 25%;    }
+.shortcode1-3.last{ margin-right: 0; width: 33.33%; }
+.shortcode1-2.last{ margin-right: 0; width: 50%;    }
+.shortcode2-3.last{ margin-right: 0; width: 66.66%; }	
+.shortcode3-4.last{ margin-right: 0; width: 75%;    }
+
+.shortcode1-5.last{ margin-right: 0; width: 20%; }
+.shortcode2-5.last{ margin-right: 0; width: 40%; }
+.shortcode3-5.last{ margin-right: 0; width: 60%; }
+.shortcode4-5.last{ margin-right: 0; width: 80%; }
+
+
+/* List Style ---------------------- */
+.list ul { margin-left: 0px !important; list-style: none; }
+.list li { padding: 2px 0px 2px 25px ; border: none; }
+.list.check li { background: url('../images/icons/list/check.png') no-repeat 0px center !important; }
+.list.check2 li { background: url('../images/icons/list/check2.png') no-repeat 0px center !important; }
+.list.check3 li { background: url('../images/icons/list/check3.png') no-repeat 0px center !important; }
+.list.delete li { background: url('../images/icons/list/delete.png') no-repeat 0px center !important; }
+.list.delete2 li { background: url('../images/icons/list/delete2.png') no-repeat 0px center !important; }
+.list.delete3 li { background: url('../images/icons/list/delete3.png') no-repeat 0px center !important; }
+.list.arrow li { background: url('../images/icons/list/arrow.png') no-repeat 0px center !important; }
+.list.arrow2 li { background: url('../images/icons/list/arrow2.png') no-repeat 0px center !important; }
+.list.arrow3 li { background: url('../images/icons/list/arrow3.png') no-repeat 0px center !important; }
+.list.bullet li { background: url('../images/icons/list/bullet.png') no-repeat 0px center !important; }
+.list.bullet2 li { background: url('../images/icons/list/bullet2.png') no-repeat 0px center !important; }
+.list.bullet3 li { background: url('../images/icons/list/bullet3.png') no-repeat 0px center !important; }
+
+
+/* Table ---------------------- */
+table {
+  font-family: 'Montserrat', sans-serif;
+  color: #0b3c5c;
+  border-spacing: 2px;
+  border-collapse: inherit;
+}
+table tr th {
+  padding: 10px;
+  background-color: #7e99a2;
+  font-weight: 100;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  
+}
+table tr:nth-child(odd) {
+  background-color: #a8bac0;
+}
+table tr:nth-child(even) {
+  background-color: #c8d3d6;
+}
+
+table tr td {
+  padding: 10px;
+  font-size: 12px;
+}
